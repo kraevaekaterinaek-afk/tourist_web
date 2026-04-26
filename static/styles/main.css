@@ -189,21 +189,14 @@ body {
     background-color: #CCCCFF;
     height: 95px;
     width: 95px;
-    top: 1175px;
-    left: 2434px;
+    bottom: 100px;
+    right: 100px;
     border-radius: 100px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
-.plus a {
-    position: fixed;
-    font-size: 64px;
-    top: 1180px;
-    left: 2463px;
-    color: #fff;
-    font-family: Inter, Segoe WPC, Segoe UI, sans-serif;
-    text-decoration: none;
-}
-
 /* 
 @media (max-width: 1200px) {
     .menu {
