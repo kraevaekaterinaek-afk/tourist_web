@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/auth.css') }}">
+</head>
+<body>
+    <div class="container">
+        <form method="post">
+            <div class="input">
+                <p>Введите логин</p>
+                <input type="text" name="nickname">
+            </div>
+            <div class="input">
+                <p>Придумайте пароль</p>
+                <input type="password" name="password">
+            </div>
+            <div class="input">
+                <p>Подтвердите пароль</p>
+                <input type="password" name="password_r">
+            </div>
+            <div class="input">
+                <input type="submit" value="Зарегистрироваться">
+            </div>
+            <div class="authreg">
+                <a href="/auth">Авторизация</a>
+            </div>
+        </form>
+    </div>
+        {% if get_flashed_messages() %}
+            <span class="flash">{{ get_flashed_messages()[0] }}</span>
+        {% endif %}
+</body>
+</html>
